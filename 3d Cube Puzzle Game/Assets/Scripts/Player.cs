@@ -20,21 +20,21 @@ public class Player : MonoBehaviour
         down = new Vector3(0, -_bound.size.y / 2, -_bound.size.z / 2);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.A) && !isRolling)
         {
             StartCoroutine(Roll(left));
         }
-        else if(Input.GetKey(KeyCode.D) && !isRolling)
+        else if (Input.GetKey(KeyCode.D) && !isRolling)
         {
             StartCoroutine(Roll(right));
         }
-        else if(Input.GetKey(KeyCode.W) && !isRolling)
+        else if (Input.GetKey(KeyCode.W) && !isRolling)
         {
             StartCoroutine(Roll(up));
         }
-        else if(Input.GetKey(KeyCode.S) && !isRolling)
+        else if (Input.GetKey(KeyCode.S) && !isRolling)
         {
             StartCoroutine(Roll(down));
         }
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         Vector3 point = transform.position + positionToRotation;
         Vector3 axis = Vector3.Cross(Vector3.up, positionToRotation).normalized;
 
-        while(angle < 90f)
+        while (angle < 90f)
         {
             float angleSpeed = Time.deltaTime + rotateSpeed;
             transform.RotateAround(point, axis, angleSpeed);
