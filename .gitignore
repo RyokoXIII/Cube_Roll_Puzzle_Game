@@ -58,3 +58,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.dll
+3d Cube Puzzle Game/Temp/UnityLockfile
+3d Cube Puzzle Game/Temp/UnityTempFile-2b5f19a94b974f349823fb73f2ae91b5
+3d Cube Puzzle Game/Temp/UnityTempFile-83d2056f21d6f5c4ab74dfb50c9aa8f5
+3d Cube Puzzle Game/Temp/UnityTempFile-c7a30a747959a7d44b9fd859af58d42b
+3d Cube Puzzle Game/Temp/UnityTempFile-ff06c8128f77d1a4b9392252d185915d
+3d Cube Puzzle Game/Library/ScriptAssemblies/Assembly-CSharp.dll
